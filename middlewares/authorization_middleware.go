@@ -4,11 +4,11 @@ import (
 	"context"
 	"strings"
 
-	apperrors "git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/appErrors"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/helpers"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/models"
+	apperrors "library-api/appErrors"
+	"library-api/helpers"
+	"library-api/models"
 
-	// "git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/models"
+	// "library-api/models"
 	"github.com/gin-gonic/gin"
 )
 

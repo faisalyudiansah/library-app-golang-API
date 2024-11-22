@@ -1,4 +1,4 @@
-module git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api
+module library-api
 
 go 1.19
 

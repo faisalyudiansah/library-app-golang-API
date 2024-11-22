@@ -1,7 +1,8 @@
 package servers
 
 import (
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/middlewares"
+	"library-api/middlewares"
+
 	"github.com/gin-gonic/gin"
 )
 

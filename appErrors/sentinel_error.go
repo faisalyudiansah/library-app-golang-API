@@ -3,7 +3,7 @@ package apperrors
 import (
 	"errors"
 
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/constants"
+	"library-api/constants"
 )
 
 var (

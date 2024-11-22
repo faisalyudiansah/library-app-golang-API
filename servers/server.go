@@ -3,11 +3,11 @@ package servers
 import (
 	"database/sql"
 
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/controllers"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/helpers"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/helpers/logger"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/repositories"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/services"
+	"library-api/controllers"
+	"library-api/helpers"
+	"library-api/helpers/logger"
+	"library-api/repositories"
+	"library-api/services"
 )
 
 type HandlerOps struct {

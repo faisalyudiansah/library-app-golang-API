@@ -3,7 +3,8 @@ package helpers
 import (
 	"reflect"
 
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/dtos"
+	"library-api/dtos"
+
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 )

@@ -5,11 +5,12 @@ import (
 	"testing"
 	"time"
 
-	apperrors "git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/appErrors"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/dtos"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/mocks"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/models"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/services"
+	apperrors "library-api/appErrors"
+	"library-api/dtos"
+	"library-api/mocks"
+	"library-api/models"
+	"library-api/services"
+
 	"github.com/stretchr/testify/assert"
 )
 

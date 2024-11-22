@@ -5,9 +5,9 @@ import (
 	"database/sql"
 	"fmt"
 
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/dtos"
-	utilscontext "git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/helpers/utilsContext"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/models"
+	"library-api/dtos"
+	utilscontext "library-api/helpers/utilsContext"
+	"library-api/models"
 )
 
 type BorrowRepository interface {

@@ -4,8 +4,9 @@ import (
 	"errors"
 	"net/http"
 
-	apperrors "git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/appErrors"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/helpers"
+	apperrors "library-api/appErrors"
+	"library-api/helpers"
+
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 )

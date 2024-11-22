@@ -3,7 +3,8 @@ package middlewares
 import (
 	"strconv"
 
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/middlewares/metrics"
+	"library-api/middlewares/metrics"
+
 	"github.com/gin-gonic/gin"
 )
 

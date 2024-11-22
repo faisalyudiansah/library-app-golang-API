@@ -4,11 +4,12 @@ import (
 	"io"
 	"net/http"
 
-	apperrors "git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/appErrors"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/constants"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/dtos"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/helpers"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/services"
+	apperrors "library-api/appErrors"
+	"library-api/constants"
+	"library-api/dtos"
+	"library-api/helpers"
+	"library-api/services"
+
 	"github.com/gin-gonic/gin"
 )
 

@@ -1,6 +1,6 @@
 package dtos
 
-import "git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/models"
+import "library-api/models"
 
 func ToResponseBookType(books []models.Book) []ResponseBook {
 	var bookResponses []ResponseBook

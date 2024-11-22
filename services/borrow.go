@@ -3,10 +3,10 @@ package services
 import (
 	"context"
 
-	apperrors "git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/appErrors"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/dtos"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/models"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/repositories"
+	apperrors "library-api/appErrors"
+	"library-api/dtos"
+	"library-api/models"
+	"library-api/repositories"
 )
 
 type BorrowService interface {

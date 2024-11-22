@@ -1,7 +1,8 @@
 package servers
 
 import (
-	apperrors "git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/appErrors"
+	apperrors "library-api/appErrors"
+
 	"github.com/gin-gonic/gin"
 )
 

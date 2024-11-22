@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/models"
+	"library-api/models"
 )
 
 func SetTx(c context.Context, tx *sql.Tx) context.Context {

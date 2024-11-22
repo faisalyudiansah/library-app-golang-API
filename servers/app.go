@@ -9,7 +9,8 @@ import (
 	"syscall"
 	"time"
 
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/databases"
+	"library-api/databases"
+
 	"github.com/joho/godotenv"
 )
 

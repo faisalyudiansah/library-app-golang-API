@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	utilscontext "git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/helpers/utilsContext"
+	utilscontext "library-api/helpers/utilsContext"
 )
 
 type TransactionRepository interface {

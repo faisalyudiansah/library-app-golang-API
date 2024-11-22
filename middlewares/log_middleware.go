@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/helpers/logger"
+	"library-api/helpers/logger"
+
 	"github.com/gin-gonic/gin"
 )
 

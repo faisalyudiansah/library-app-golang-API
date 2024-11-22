@@ -8,14 +8,15 @@ import (
 	"testing"
 	"time"
 
-	apperrors "git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/appErrors"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/constants"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/controllers"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/dtos"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/helpers"
-	utilscontext "git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/helpers/utilsContext"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/middlewares"
-	"git.garena.com/sea-labs-id/bootcamp/batch-04/shared-projects/library-api/mocks"
+	apperrors "library-api/appErrors"
+	"library-api/constants"
+	"library-api/controllers"
+	"library-api/dtos"
+	"library-api/helpers"
+	utilscontext "library-api/helpers/utilsContext"
+	"library-api/middlewares"
+	"library-api/mocks"
+
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 )
