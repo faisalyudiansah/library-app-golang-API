@@ -9,7 +9,7 @@ import (
 func SetupRoute(h *HandlerOps) *gin.Engine {
 	g := gin.New()
 	g.ContextWithFallback = true
-	g.Use(middlewares.IncrementRequestCount, middlewares.LoggerMiddleware(), gin.Recovery(), middlewares.ErrorHandler)
+	g.Use(gin.Recovery(), middlewares.IncrementRequestCount, middlewares.LoggerMiddleware(), middlewares.ErrorHandler)
 
 	g.NoRoute(InvalidRoute)
 

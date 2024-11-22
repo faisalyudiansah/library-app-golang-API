@@ -183,9 +183,6 @@ func TestRegisterUserControllers(t *testing.T) {
 
 func TestLoginUserControllers(t *testing.T) {
 	t.Run("should success login user when user sent correct request body", func(t *testing.T) {
-		gin.SetMode(gin.TestMode)
-		mockUserService := &mocks.UserService{}
-
 		var (
 			emailBody    = "frieren@gmail.com"
 			passwordBody = "12345"
@@ -200,6 +197,10 @@ func TestLoginUserControllers(t *testing.T) {
 		expectedAccessToken := &dtos.ResponseDataUser{
 			AccessToken: &AccessToken,
 		}
+
+		gin.SetMode(gin.TestMode)
+		rec := httptest.NewRecorder()
+		mockUserService := &mocks.UserService{}
 		mockUserService.On("PostLoginUserService", mock.AnythingOfType("*gin.Context"), newUser).Return(expectedAccessToken, nil)
 		userController := controllers.NewUserController(mockUserService)
 
@@ -208,17 +209,16 @@ func TestLoginUserControllers(t *testing.T) {
 		reqBody, _ := json.Marshal(newUser)
 		req, _ := http.NewRequest(http.MethodPost, "/login", bytes.NewBuffer(reqBody))
 		req.Header.Set("Content-Type", "application/json")
-		rec := httptest.NewRecorder()
 		g.ServeHTTP(rec, req)
-		// var response map[string]interface{}
-		// json.Unmarshal(rec.Body.Bytes(), &response)
+		var response map[string]interface{}
+		json.Unmarshal(rec.Body.Bytes(), &response)
 
-		// expect := helpers.FormatterSuccessRegisterLogin(expectedAccessToken, constants.SuccessLogin)
-		// expectedToJson, _ := json.Marshal(expect)
+		expect := helpers.FormatterSuccessRegisterLogin(expectedAccessToken, constants.SuccessLogin)
+		expectedToJson, _ := json.Marshal(expect)
 
 		assert.Equal(t, http.StatusOK, rec.Code)
-		// assert.Equal(t, string(expectedToJson), rec.Body.String())
-		// assert.Equal(t, expect.Message, response["message"])
+		assert.Equal(t, string(expectedToJson), rec.Body.String())
+		assert.Equal(t, expect.Message, response["message"])
 	})
 
 	t.Run("should fail to login new user when user does not send email or any mandatory fields", func(t *testing.T) {
